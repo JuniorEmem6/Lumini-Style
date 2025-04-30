@@ -1,12 +1,29 @@
-# React + Vite
+# 🌟 LuminaStyle - Modern E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LuminaStyle** is a sleek, high-performance online fashion store built with **React.js** and **Tailwind CSS**. Designed for scalability and conversions, this project features a responsive layout, modern UI, and seamless shopping experience.
 
-Currently, two official plugins are available:
+![LuminaStyle Preview](https://via.placeholder.com/800x500.png?text=LuminaStyle+Demo) *(Replace with actual screenshot later)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+[View Demo](#) *(Link to live site once deployed)*
 
-## Expanding the ESLint configuration
+## ✨ Features
+✅ **Responsive Design** – Works on mobile, tablet & desktop  
+✅ **Modern UI** – Clean, intuitive interface with Tailwind CSS  
+✅ **Product Search** – Find items quickly  
+✅ **Shopping Cart** – Real-time cart updates  
+✅ **User Account** – Login/profile section (coming soon)  
+✅ **Performance Optimized** – Fast loading with lazy loading  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- **Frontend**: React.js, Tailwind CSS  
+- **Icons**: React Icons  
+- **State Management**: React Context API  
+- **Routing**: React Router (to be added)  
+- **Backend**: *(Future: Node.js/Express or Firebase)*  
+
+## 📦 Installation
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/yourusername/lumina-style.git
+   cd lumina-style
