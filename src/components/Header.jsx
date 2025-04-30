@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Mobile Menu Button (Hidden on desktop) */}
           <button 
-            className="md:hidden text-dark hover:text-primary"
+            className="md:hidden text-dark hover:text-[#4F46E5]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -20,8 +20,8 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">LUMINA</span>
-            <span className="text-secondary font-medium hidden sm:inline">STYLE</span>
+            <span className="text-2xl font-bold text-[#4F46E5]">LUMINA</span>
+            <span className="text-[#10B981] font-medium hidden sm:inline">STYLE</span>
           </div>
 
           {/* Desktop Search (Hidden on mobile) */}
@@ -32,7 +32,7 @@ const Header = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search products..."
-                className="w-full py-2 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                className="w-full py-2 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent"
               />
               <FiSearch className="absolute right-3 top-3 text-gray-400" />
             </div>
@@ -40,23 +40,23 @@ const Header = () => {
 
           {/* Desktop Icons (Hidden on mobile) */}
           <div className="hidden md:flex items-center space-x-6">
-            <button className="text-dark hover:text-primary">
+            <button className="text-[#1F2937] hover:text-[#4F46E5]">
               <FiUser size={20} />
             </button>
-            <button className="relative text-dark hover:text-primary">
+            <button className="relative text-[#1F2937] hover:text-[#4F46E5]">
               <FiShoppingCart size={20} />
-              <span className="absolute -top-2 -right-2 bg-accent text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+              <span className="absolute -top-2 -right-2 bg-[#F59E0B] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
             </button>
           </div>
 
           {/* Mobile Search & Cart (Hidden on desktop) */}
           <div className="flex md:hidden items-center space-x-4">
-            <button className="text-dark hover:text-primary">
+            <button className="text-[#1F2937] hover:text-[#4F46E5]">
               <FiSearch size={20} />
             </button>
-            <button className="relative text-dark hover:text-primary">
+            <button className="relative text-[#1F2937] hover:text-[#4F46E5]">
               <FiShoppingCart size={20} />
-              <span className="absolute -top-2 -right-2 bg-accent text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
+              <span className="absolute -top-2 -right-2 bg-[#F59E0B] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">3</span>
             </button>
           </div>
         </div>
@@ -70,7 +70,7 @@ const Header = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search..."
-                className="w-full py-2 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full py-2 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4F46E5]"
               />
               <FiSearch className="absolute right-3 top-3 text-gray-400" />
             </div>
@@ -80,11 +80,11 @@ const Header = () => {
         {/* Mobile Menu (Slide-down animation) */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} transition-all duration-300`}>
           <nav className="flex flex-col space-y-4 mt-4 pb-4 border-t border-gray-100">
-            <a href="#" className="text-dark hover:text-primary font-medium py-2">Home</a>
-            <a href="#" className="text-dark hover:text-primary font-medium py-2">Shop</a>
-            <a href="#" className="text-dark hover:text-primary font-medium py-2">Collections</a>
-            <a href="#" className="text-dark hover:text-primary font-medium py-2">About</a>
-            <a href="#" className="text-dark hover:text-primary font-medium py-2">Account</a>
+            <a href="#" className="text-[#1F2937] hover:text-[#4F46E5] font-medium py-2">Home</a>
+            <a href="#" className="text-[#1F2937] hover:text-[#4F46E5] font-medium py-2">Shop</a>
+            <a href="#" className="text-[#1F2937] hover:text-[#4F46E5] font-medium py-2">Collections</a>
+            <a href="#" className="text-[#1F2937] hover:text-[#4F46E5] font-medium py-2">About</a>
+            <a href="#" className="text-[#1F2937] hover:text-[#4F46E5] font-medium py-2">Account</a>
           </nav>
         </div>
       </div>
