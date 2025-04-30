@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { FiArrowRight, FiShoppingBag, FiX, FiClock } from "react-icons/fi";
+import ShopTheLookModal from "./ShopTheLook";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
