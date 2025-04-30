@@ -106,7 +106,7 @@ const Header = () => {
           
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300"
+            className="md:hidden text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -115,8 +115,8 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <a href="/" className="text-2xl font-bold text-primary dark:text-primary-300">LUMINA</a>
-            <span className="text-secondary dark:text-secondary-300 font-medium hidden sm:inline">STYLE</span>
+            <a href="/" className="text-2xl font-bold text-[#4F46E5] dark:text-[#4F46E5]-300">LUMINA</a>
+            <span className="text-[#10B981] dark:text-[#10B981]-300 font-medium hidden sm:inline">STYLE</span>
           </div>
 
           {/* Desktop Search */}
@@ -127,7 +127,7 @@ const Header = () => {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search products..."
-                className="w-full py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primary-300 focus:border-transparent bg-white dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
+                className="w-full py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4F46E5] dark:focus:ring-[#4F46E5]-300 focus:border-transparent bg-white dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
               />
               <FiSearch className="absolute right-3 top-3 text-gray-400 dark:text-gray-300" />
             </div>
@@ -138,21 +138,21 @@ const Header = () => {
             {/* Dark Mode Toggle */}
             <button 
               onClick={toggleDarkMode}
-              className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors"
+              className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors"
               aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
             >
               {darkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
             </button>
 
             {/* Wishlist */}
-            <a href="/wishlist" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors">
+            <a href="/wishlist" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors">
               <FiHeart size={20} />
             </a>
 
             {/* User Dropdown */}
             <div className="relative" ref={userDropdownRef}>
               <button 
-                className="flex items-center text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors"
+                className="flex items-center text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors"
                 onClick={() => setIsUserDropdownOpen(!isUserDropdownOpen)}
                 aria-expanded={isUserDropdownOpen}
               >
@@ -187,14 +187,14 @@ const Header = () => {
 
             {/* Cart with counter */}
             <button 
-              className="relative text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors"
+              className="relative text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors"
               onClick={() => setIsCartOpen(true)}
               data-cart-button
               aria-label={`Cart (${cartItems.reduce((total, item) => total + item.quantity, 0)} items)`}
             >
               <FiShoppingCart size={20} />
               {cartItems.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-accent dark:bg-accent-dark text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#F59E0B] dark:bg-[#F59E0B]-dark text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {cartItems.reduce((total, item) => total + item.quantity, 0)}
                 </span>
               )}
@@ -204,7 +204,7 @@ const Header = () => {
           {/* Mobile Icons */}
           <div className="flex md:hidden items-center space-x-4">
             <button 
-              className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors"
+              className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors"
               onClick={() => setSearchQuery(searchQuery ? '' : ' ')}
               aria-label="Search"
             >
@@ -212,14 +212,14 @@ const Header = () => {
             </button>
             
             <button 
-              className="relative text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 transition-colors"
+              className="relative text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 transition-colors"
               onClick={() => setIsCartOpen(true)}
               data-cart-button
               aria-label={`Cart (${cartItems.reduce((total, item) => total + item.quantity, 0)} items)`}
             >
               <FiShoppingCart size={20} />
               {cartItems.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-accent dark:bg-accent-dark text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-[#F59E0B] dark:bg-[#F59E0B]-dark text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {cartItems.reduce((total, item) => total + item.quantity, 0)}
                 </span>
               )}
@@ -246,7 +246,7 @@ const Header = () => {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Search..."
-                  className="w-full py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-primary-300 bg-white dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
+                  className="w-full py-2 px-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4F46E5] dark:focus:ring-[#4F46E5]-300 bg-white dark:bg-gray-800 dark:text-white placeholder-gray-400 dark:placeholder-gray-400"
                 />
                 <FiSearch className="absolute right-3 top-3 text-gray-400 dark:text-gray-300" />
               </div>
@@ -265,10 +265,10 @@ const Header = () => {
               className="md:hidden overflow-hidden"
             >
               <nav className="flex flex-col space-y-4 mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
-                <a href="/" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 font-medium py-2 transition-colors">Home</a>
-                <a href="/shop" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 font-medium py-2 transition-colors">Shop</a>
-                <a href="/collections" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 font-medium py-2 transition-colors">Collections</a>
-                <a href="/about" className="text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary-300 font-medium py-2 transition-colors">About</a>
+                <a href="/" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Home</a>
+                <a href="/shop" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Shop</a>
+                <a href="/collections" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Collections</a>
+                <a href="/about" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">About</a>
                 <div className="flex items-center justify-between pt-2">
                   <span className="text-gray-700 dark:text-gray-200">Theme:</span>
                   <button 
@@ -323,7 +323,7 @@ const Header = () => {
                         <p className="text-gray-500 dark:text-gray-400 mb-4">Your cart is empty</p>
                         <a 
                           href="/shop" 
-                          className="inline-block bg-primary dark:bg-primary-300 hover:bg-primary-600 dark:hover:bg-primary-400 text-white py-2 px-4 rounded-md transition-colors"
+                          className="inline-block bg-[#4F46E5] dark:bg-[#4F46E5]-300 hover:bg-[#4F46E5]-600 dark:hover:bg-[#4F46E5]-400 text-white py-2 px-4 rounded-md transition-colors"
                           onClick={() => setIsCartOpen(false)}
                         >
                           Continue Shopping
@@ -395,14 +395,14 @@ const Header = () => {
                       </div>
                       <a 
                         href="/checkout" 
-                        className="block w-full bg-primary dark:bg-primary-300 hover:bg-primary-600 dark:hover:bg-primary-400 text-white py-2 px-4 rounded-md text-center transition-colors"
+                        className="block w-full bg-[#4F46E5] dark:bg-[#4F46E5]-300 hover:bg-[#4F46E5]-600 dark:hover:bg-[#4F46E5]-400 text-white py-2 px-4 rounded-md text-center transition-colors"
                         onClick={() => setIsCartOpen(false)}
                       >
                         Proceed to Checkout
                       </a>
                       <a 
                         href="/shop" 
-                        className="block w-full mt-2 text-center text-primary dark:text-primary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                        className="block w-full mt-2 text-center text-[#4F46E5] dark:text-[#4F46E5]-300 hover:text-[#4F46E5]-600 dark:hover:text-[#4F46E5]-400 transition-colors"
                         onClick={() => setIsCartOpen(false)}
                       >
                         Continue Shopping
