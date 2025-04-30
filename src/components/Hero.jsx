@@ -191,7 +191,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className={`relative overflow-hidden bg-gradient-to-r ${slides[currentSlide].bgColor} transition-colors duration-1000 min-h-screen`}
+      className={`relative overflow-hidden bg-linear-to-r ${slides[currentSlide].bgColor} transition-colors duration-1000 min-h-screen`}
     >
       {/* Media Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
