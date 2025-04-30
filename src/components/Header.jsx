@@ -268,9 +268,7 @@ const Header = () => {
                 <a href="/" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Home</a>
                 <a href="/shop" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Shop</a>
                 <a href="/collections" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">Collections</a>
-                <a href="/about" className="text-gray-700 dark:text-gray-200 hover:text-[#4F46E5] dark:hover:text-[#4F46E5]-300 font-medium py-2 transition-colors">About</a>
                 <div className="flex items-center justify-between pt-2">
-                  <span className="text-gray-700 dark:text-gray-200">Theme:</span>
                   <button 
                     onClick={toggleDarkMode}
                     className="ml-2 p-1 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
