@@ -38,6 +38,13 @@ const Header = () => {
             </div>
           </div>
 
+          <nav className="hidden md:flex space-x-8">
+          <a href="#" className="text-dark hover:text-primary font-medium">Home</a>
+          <a href="#" className="text-dark hover:text-primary font-medium">Shop</a>
+          <a href="#" className="text-dark hover:text-primary font-medium">Collections</a>
+          <a href="#" className="text-dark hover:text-primary font-medium">About</a>
+        </nav>
+
           {/* Desktop Icons (Hidden on mobile) */}
           <div className="hidden md:flex items-center space-x-6">
             <button className="text-[#1F2937] hover:text-[#4F46E5]">
